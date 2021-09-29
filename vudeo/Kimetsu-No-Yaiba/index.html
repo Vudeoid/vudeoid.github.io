@@ -1,0 +1,189 @@
+<style>
+    video {
+    max-width: 100%;
+    height: auto;
+}
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        gap: 10px;
+      }
+      a {
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .password {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #notifikasi {
+        margin-top: 5px;
+        font-size: 0.9em;
+        letter-spacing: 0.3px;
+        display: none;
+        font-weight: bold;
+        color: red;
+      }
+      .modal-header {
+            background: #F7941E;
+            color: #fff;
+        }
+        
+        .required:after {
+            content: "*";
+            color: red;
+        }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!--using FontAwesome--------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Demon Slayer</title>
+  </head>
+  <body>
+    <center>
+    <video controls controlsList="nodownload">
+      <source src="kimetsu-no-yaiba-01.mp4" type="video/mp4" />
+    </video>
+    </center>
+
+      <h2 style="margin-left: 10px;">Kimetsu No Yaiba<br> Episode 1-26 • </h2>
+      
+
+      <div class="d-grid gap-2">
+        <a href="">
+        <button type="button" class="btn btn-outline-success" style="border-radius: 10px;">Subscribe To Download</button>
+      </a>
+
+      </div>
+
+
+    <div class="buttons">
+      <div class="btn">
+        <button type="submit" value="1" class="btn btn-primary">Eps 1</button>
+        <button type="submit" value="2" class="btn btn-primary">Eps 2</button>
+        <button type="submit" value="3" class="btn btn-primary">Eps 3</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="4" class="btn btn-primary">Eps 4</button>
+        <button type="submit" value="5" class="btn btn-primary">Eps 5</button>
+        <button type="submit" value="6" class="btn btn-primary">Eps 6</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="7" class="btn btn-primary">Eps 7</button>
+        <button type="submit" value="8" class="btn btn-primary">Eps 8</button>
+        <button type="submit" value="9" class="btn btn-primary">Eps 9</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="10" class="btn btn-primary">Eps 10</button>
+        <button type="submit" value="11" class="btn btn-primary">Eps 11</button>
+        <button type="submit" value="12" class="btn btn-primary">Eps 12</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="13" class="btn btn-primary">Eps 13</button>
+        <button type="submit" value="14" class="btn btn-primary">Eps 14</button>
+        <button type="submit" value="15" class="btn btn-primary">Eps 15</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="16" class="btn btn-primary">Eps 16</button>
+        <button type="submit" value="17" class="btn btn-primary">Eps 17</button>
+        <button type="submit" value="18" class="btn btn-primary">Eps 18</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="19" class="btn btn-primary">Eps 19</button>
+        <button type="submit" value="20" class="btn btn-primary">Eps 20</button>
+        <button type="submit" value="21" class="btn btn-primary">Eps 21</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="22" class="btn btn-primary">Eps 22</button>
+        <button type="submit" value="23" class="btn btn-primary">Eps 23</button>
+        <button type="submit" value="24" class="btn btn-primary">Eps 24</button>
+      </div>
+      <div class="btn">
+        <button type="submit" value="25" class="btn btn-primary">Eps 25</button>
+        <button type="submit" value="26" class="btn btn-primary">Eps 26</button>
+      </div>
+     </div>
+     <div class="password">
+      <p>Masukkan password untuk mendownload</p>
+      <input type="text" id="passwordInput" placeholder="Masukkan password" />
+      <span id="notifikasi">Password salah</span>
+    </div>
+    <a href="##">Download</a>
+
+
+  </body>
+</html>
+
+<script>
+    const video = document.querySelector("video");
+      let videoSourceTag = document.querySelector("video").children[0];
+      const btn = document.querySelectorAll("button");
+      const linksDownload = document.querySelector("a");
+
+      const passwordDownload = "nonkuyid";
+      const passwordInput = document.getElementById("passwordInput");
+
+      btn.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          let sourceVideo = `kimetsu-no-yaiba-0${e.target.value}.mp4`;
+          videoSourceTag.src = sourceVideo;
+          video.load();
+
+          linksDownload.addEventListener("click", (e) => {
+            const notifikasi = document.getElementById("notifikasi");
+            if (passwordInput.value === passwordDownload) {
+              linksDownload.setAttribute("href", sourceVideo);
+              linksDownload.setAttribute("download", `kimetsu-no-yaiba-0${e.target.value}.mp4`);
+              notifikasi.innerText = "Password benar";
+              notifikasi.style.color = "green";
+              notifikasi.style.display = "inherit";
+            } else {
+              notifikasi.style.color = "red";
+              notifikasi.style.display = "inherit";
+              linksDownload.setAttribute("href", "##");
+              linksDownload.removeAttribute("download");
+            }
+          });
+        });
+      });
+
+      linksDownload.addEventListener("click", (e) => {
+        if (passwordInput.value === passwordDownload) {
+          linksDownload.setAttribute("href", `kimetsu-no-yaiba-01.mp4`);
+          linksDownload.setAttribute("download", `kimetsu-no-yaiba-01.mp4`);
+          notifikasi.innerText = "Password benar";
+          notifikasi.style.color = "green";
+          notifikasi.style.display = "inherit";
+        } else {
+          notifikasi.style.color = "red";
+          notifikasi.style.display = "inherit";
+          linksDownload.setAttribute("href", "##");
+          linksDownload.removeAttribute("download");
+        }
+      });
+</script>
