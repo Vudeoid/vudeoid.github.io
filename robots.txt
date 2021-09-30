@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vudeoid.github.io/sitemap.xml
